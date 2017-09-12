@@ -13,8 +13,12 @@ public class RobotSquare {
     	// 1. Make a new Robot
 Robot r = new Robot();
 r.penDown();
-r.setSpeed(10);
-r.move(400);
+r.setSpeed(1000);
+for (int i = 0; i < 4; i++) {
+	r.move(200);
+	r.setRandomPenColor();
+	r.turn(90);
+}
 
         // 3. Put the robot's pen down
 
